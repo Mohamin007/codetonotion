@@ -7,24 +7,24 @@
 As a developer, your knowledge is scattered everywhere. You write comments inside your code files explaining what you learned, how something works, why you made a decision. But those comments are buried inside hundreds of lines of code. You can't easily find them, you can't read them on your phone, and you can't share them with anyone.
 
 ## The Solution
-CodeToNotion automatically extracts your comments from VS Code files, refines them into clean study notes using AI, and organizes them in Notion — mirroring your exact folder structure.
+CodeToNotion automatically extracts your comments from VS Code files, refines them into clean study notes using AI, and organizes them in Notion. Mirroring your exact folder structure.
 
-Write code normally. Add comments as you always do. Run one command. Your knowledge is now in Notion — organized, beautiful, accessible anywhere.
+Write code normally. Add comments as you always do. Run one command. Your knowledge is now in Notion. Organized, beautiful, accessible anywhere.
 
 ## How It Works
 1. You write Python code with comments in VS Code
 2. When done, run one command
 3. CodeToNotion extracts all comments (hashtag, inline, and docstrings)
 4. Groq AI refines them into proper study notes
-5. Notes appear in Notion — organized by folder and file
+5. Notes appear in Notion. Organized by folder and file
 
 ## Features
 - ✅ Syncs single file or entire folder at once
-- ✅ Reads all comment types — `#hashtag`, `inline #comments`, and `"""docstrings"""`
+- ✅ Reads all comment types: `#hashtag`, `inline #comments`, and `"""docstrings"""`
 - ✅ AI-powered note refinement using Groq (llama-3.3-70b)
 - ✅ Mirrors your VS Code folder structure in Notion automatically
-- ✅ Private file protection — add `# PRIVATE - DO NOT SYNC` to skip any file
-- ✅ Beautiful Notion formatting — headers, bullet points, sections
+- ✅ Private file protection: add `# PRIVATE - DO NOT SYNC` to skip any file
+- ✅ Beautiful Notion formatting: headers, bullet points, sections
 - ✅ Built on Notion MCP + Notion API
 
 ## Tech Stack
@@ -72,8 +72,8 @@ python codetonotion.py
 
 ## Usage
 When prompted, choose:
-- **Option 1** — sync a single file
-- **Option 2** — sync an entire folder
+- **Option 1** - sync a single file
+- **Option 2** - sync an entire folder
 
 ### Example
 Your VS Code:
@@ -91,7 +91,7 @@ After running CodeToNotion, your Notion:
 ```
 
 ## Privacy
-Any file with `# PRIVATE - DO NOT SYNC` as the first line will be completely skipped — never sent to AI or Notion.
+Any file with `# PRIVATE - DO NOT SYNC` as the first line will be completely skipped, never sent to AI or Notion.
 
 ## Notion MCP Integration
 This project also includes Claude Desktop + Notion MCP setup. Once configured, Claude Desktop can read your synced Notion notes and answer questions about your learning!
@@ -110,4 +110,4 @@ FYIMP Data Science & AI, University of Kashmir
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-moham7n-blue?style=flat&logo=linkedin)](https://linkedin.com/in/moham7n)
 
 ---
-*Built for MLH Global Hack Week — Cloud Week 2026* 🔥
+*Built for MLH Global Hack Week - Cloud Week 2026* 🔥
