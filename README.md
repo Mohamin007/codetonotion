@@ -142,9 +142,23 @@ Notes organized in Notion automatically
         ↓
 Ask Claude Desktop to summarize, quiz you, or create revision plans!
 ```
+## Screenshots
+
+### Notion MCP Running in Claude Desktop
+![Notion MCP](screenshots/Screenshot%202026-03-14%20191300.png)
+
+### CodeToNotion Syncing Files
+![Terminal Sync](screenshots/Screenshot%202026-03-14%20191504.png)
+
+### Notion Folder Structure
+![Notion Folder](screenshots/Screenshot%202026-03-14%20191549.png)
+
+### Notion Page Result
+![Notion Page](screenshots/Screenshot%202026-03-14%20191627.png)
+
 ## Built By
 **Mohamin Mir**
-19 year old developer from Kashmir, India
+19 year old developer from Kashmir, India.
 FYIMP Data Science & AI, University of Kashmir
 
 [![GitHub](https://img.shields.io/badge/GitHub-Mohamin007-black?style=flat&logo=github)](https://github.com/Mohamin007)
