@@ -1,6 +1,7 @@
 # CodeToNotion 🚀
 
 > Turn your VS Code comments into organized Notion notes — automatically.
+> Made by Mohamin Mushtaq (FYIMP Data Science and AI)
 
 ## The Problem
 As a developer, your knowledge is scattered everywhere. You write comments inside your code files explaining what you learned, how something works, why you made a decision. But those comments are buried inside hundreds of lines of code. You can't easily find them, you can't read them on your phone, and you can't share them with anyone.
@@ -103,7 +104,7 @@ And Claude will read your notes and respond intelligently! 🔥
 ## Built By
 **Mohamin Mir**
 19 year old developer from Kashmir, India
-B.Sc. (Hons) Data Science & AI, University of Kashmir
+FYIMP Data Science & AI, University of Kashmir
 
 [![GitHub](https://img.shields.io/badge/GitHub-Mohamin007-black?style=flat&logo=github)](https://github.com/Mohamin007)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-moham7n-blue?style=flat&logo=linkedin)](https://linkedin.com/in/moham7n)
