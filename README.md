@@ -94,13 +94,54 @@ After running CodeToNotion, your Notion:
 Any file with `# PRIVATE - DO NOT SYNC` as the first line will be completely skipped, never sent to AI or Notion.
 
 ## Notion MCP Integration
-This project also includes Claude Desktop + Notion MCP setup. Once configured, Claude Desktop can read your synced Notion notes and answer questions about your learning!
+CodeToNotion uses TWO powerful integrations:
 
-Ask Claude Desktop:
-> "Summarize what I learned about for loops from my Notion notes"
+### 1. Notion API (Automated Sync)
+The Python script connects directly to Notion API to automatically create and organize pages.
 
-And Claude will read your notes and respond intelligently! 🔥
+### 2. Notion MCP (Claude Desktop)
+Claude Desktop is connected to your Notion workspace via MCP protocol. This means Claude can intelligently READ and INTERACT with your synced notes!
 
+**Setup Claude Desktop + Notion MCP:**
+1. Install Claude Desktop
+2. Go to Settings → Developer → Edit Config
+3. Add this to your config:
+```json
+{
+  "mcpServers": {
+    "notionApi": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer YOUR_NOTION_TOKEN\", \"Notion-Version\": \"2022-06-28\"}"
+      }
+    }
+  }
+}
+```
+4. Restart Claude Desktop
+5. Connect your Notion pages to the integration
+
+**Now ask Claude Desktop things like:**
+- "Summarize what I learned about for loops today"
+- "What are all the concepts I studied this week?"
+- "Explain the notes I wrote about functions"
+- "Create a revision plan based on my Notion notes"
+
+Claude will read your actual Notion pages and respond intelligently — making your notes truly interactive! 🔥
+
+**The Complete Workflow:**
+```
+Write Code in VS Code
+        ↓
+Add Comments while learning
+        ↓
+Run CodeToNotion
+        ↓
+Notes organized in Notion automatically
+        ↓
+Ask Claude Desktop to summarize, quiz you, or create revision plans!
+```
 ## Built By
 **Mohamin Mir**
 19 year old developer from Kashmir, India
